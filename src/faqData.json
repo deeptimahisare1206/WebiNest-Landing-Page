@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "Is this webinar free?",
+    "answer": "Yes, this is a completely free live webinar. You just need to register to attend."
+  },
+  {
+    "id": 2,
+    "question": "Who can attend this event?",
+    "answer": "Students, frontend developers, backend developers, and anyone interested in modern web development can attend."
+  },
+  {
+    "id": 3,
+    "question": "Is this webinar beginner friendly?",
+    "answer": "Yes, the session is designed to be beginner friendly with clear explanations and live demos."
+  },
+  {
+    "id": 4,
+    "question": "Will I receive the recording?",
+    "answer": "Yes, the session recording will be shared with all registered participants after the webinar."
+  },
+  {
+    "id": 5,
+    "question": "Will I get a certificate?",
+    "answer": "Yes, a digital certificate of participation will be provided to all attendees."
+  },
+  {
+    "id": 6,
+    "question": "How do I join the webinar?",
+    "answer": "You will receive the joining link via email after successful registration."
+  }
+]
