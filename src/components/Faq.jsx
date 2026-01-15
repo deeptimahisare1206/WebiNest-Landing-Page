@@ -1,20 +1,55 @@
+import React from "react";
+import {
+  Container,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Typography,
+} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import faqs from "../faqData.json";
 
 export default function FAQ() {
   return (
-    <section className="max-w-4xl mx-auto p-4">
-      <h2 className="text-3xl font-bold text-center mb-10">
-        Frequently Asked Questions
-      </h2>
+    <section className="bg-gray-50 py-16">
+      <Container maxWidth="md">
+        <Typography
+          variant="h4"
+          component="h2"
+          align="center"
+          gutterBottom
+          sx={{ fontWeight: "bold", color: "#FF6B35" }}
+        >
+          Frequently Asked Questions
+        </Typography>
 
-      <div className="space-y-4">
-        {faqs.map((faq) => (
-          <div key={faq.id} className="border border-gray-200 rounded-lg">
-            <span className="font-medium text-gray-800">{faq.question}</span>
-            <span className="font-medium text-gray-800">{faq.answer}</span>
-          </div>
-        ))}
-      </div>
+        <div className="mt-8">
+          {faqs.map((faq) => (
+            <Accordion
+              key={faq.id}
+              sx={{
+                mb: 2,
+                boxShadow: 1,
+                borderRadius: 2,
+                "&:before": { display: "none" },
+              }}
+            >
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon sx={{ color: "#FF6B35" }} />}
+                aria-controls={`panel-${faq.id}-content`}
+                id={`panel-${faq.id}-header`}
+              >
+                <Typography sx={{ fontWeight: "medium", color: "#333" }}>
+                  {faq.question}
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography sx={{ color: "#555" }}>{faq.answer}</Typography>
+              </AccordionDetails>
+            </Accordion>
+          ))}
+        </div>
+      </Container>
     </section>
   );
 }

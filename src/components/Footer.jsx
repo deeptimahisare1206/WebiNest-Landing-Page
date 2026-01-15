@@ -1,54 +1,85 @@
-import React from 'react'
+import React from "react";
+import { Container, Typography, Link, Box } from "@mui/material";
 
-function Footer() {
+export default function Footer() {
   return (
-    <div>
-      <footer class="bg-gray-900 text-gray-300 mt-10">
-  <div class="max-w-7xl mx-auto px-6 py-4">
+    <Box
+      component="footer"
+      sx={{ bgcolor: "#FF6B35", color: "#fff", mt: 1, py: 2 }}
+    >
+      <Container maxWidth="lg">
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: { xs: "1fr", md: "repeat(3, 1fr)" },
+            gap: 4,
+          }}
+        >
+          <Box>
+            <Typography variant="h5" sx={{ fontWeight: "bold", mb: 2 }}>
+              WebiNest
+            </Typography>
+            <Typography variant="body2" sx={{ color: "#ffe6d1" }}>
+              Seamless event & webinar registrations. Join, learn, and connect
+              with experts worldwide.
+            </Typography>
+          </Box>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <Box>
+            <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
+              Quick Links
+            </Typography>
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+              <Link href="#home" underline="hover" sx={{ color: "#fff" }}>
+                Home
+              </Link>
+              <Link href="#agenda" underline="hover" sx={{ color: "#fff" }}>
+                Agenda
+              </Link>
+              <Link href="#speakers" underline="hover" sx={{ color: "#fff" }}>
+                Speakers
+              </Link>
+              <Link href="#register" underline="hover" sx={{ color: "#fff" }}>
+                Register
+              </Link>
+            </Box>
+          </Box>
 
-      <div>
-        <h2 class="text-2xl font-bold text-white">WebiNest</h2>
-        <p class="mt-4 text-sm text-gray-400">
-          Seamless event & webinar registrations.  
-          Join, learn, and connect with experts worldwide.
-        </p>
-      </div>
+          <Box>
+            <Typography variant="h6" sx={{ fontWeight: "bold", mb: 1 }}>
+              Contact
+            </Typography>
+            <Typography variant="body2">Email: support@eventzen.com</Typography>
+            <Typography variant="body2" sx={{ mt: 1 }}>
+              Phone: +91 98765 43210
+            </Typography>
+            <Box sx={{ display: "flex", gap: 2, mt: 2 }}>
+              <Link href="#" underline="hover" sx={{ color: "#fff" }}>
+                LinkedIn
+              </Link>
+              <Link href="#" underline="hover" sx={{ color: "#fff" }}>
+                Twitter
+              </Link>
+              <Link href="#" underline="hover" sx={{ color: "#fff" }}>
+                YouTube
+              </Link>
+            </Box>
+          </Box>
+        </Box>
 
-      <div>
-        <h3 class="text-lg font-semibold text-white ">Quick Links</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#home" class="hover:text-white">Home</a></li>
-          <li><a href="#agenda" class="hover:text-white">Agenda</a></li>
-          <li><a href="#speakers" class="hover:text-white">Speakers</a></li>
-          <li><a href="#register" class="hover:text-white">Register</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold text-white mb-2">Contact</h3>
-        <p class="text-sm">Email: support@eventzen.com</p>
-        <p class="text-sm mt-2">Phone: +91 98765 43210</p>
-
-        <div class="flex gap-4 mt-2">
-          <a href="#" class="hover:text-white">LinkedIn</a>
-          <a href="#" class="hover:text-white">Twitter</a>
-          <a href="#" class="hover:text-white">YouTube</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="border-t border-gray-700 mt-1 pt-2 text-center text-sm text-gray-400">
-      © 2026 EventZen. All rights reserved.
-    </div>
-
-  </div>
-</footer>
-
-    </div>
-  )
+        <Typography
+          variant="body2"
+          align="center"
+          sx={{
+            mt: 2,
+            pt: 2,
+            borderTop: "1px solid rgba(255,255,255,0.3)",
+            color: "#ffe6d1",
+          }}
+        >
+          © 2026 EventZen. All rights reserved.
+        </Typography>
+      </Container>
+    </Box>
+  );
 }
-
-export default Footer

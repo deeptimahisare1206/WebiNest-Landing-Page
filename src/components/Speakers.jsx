@@ -1,5 +1,4 @@
 import React from "react";
-import Cards from "./Cards";
 import s1 from "../assets/R4.jpg";
 import s2 from "../assets/R5.jpg";
 import s3 from "../assets/R6.jpg";
@@ -15,35 +14,32 @@ function Speakers() {
   ];
 
   return (
-    <div>
-      <section id="speakers" className="py-16">
-        <Container maxWidth="lg">
-          <h2 className="text-2xl font-semibold mb-10 text-center">
-            Meet the Speakers
-          </h2>
+    <section id="speakers" className="py-16 bg-gray-50">
+      <Container maxWidth="lg">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800">
+          Meet the Speakers
+        </h2>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {speakers.map((speaker) => (
-              <div
-                // key={i}
-                className="bg-white p-2 rounded-xl shadow text-center"
-              >
-                {/* <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4" /> */}
-                <img
-                  src={speaker.image}
-                  alt={speaker.name}
-                  className="w-20 h-20 rounded-full mx-auto mb-4"
-                />
-
-                <h3 className="font-semibold">{speaker.name}</h3>
-
-                <p className="text-sm text-gray-600">{speaker.role}</p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-    </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {speakers.map((speaker, index) => (
+            <div
+              key={index}
+              className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src={speaker.image}
+                alt={speaker.name}
+                className="w-24 h-24 rounded-full mb-4 object-cover"
+              />
+              <h3 className="text-lg font-semibold text-gray-800">
+                {speaker.name}
+              </h3>
+              <p className="text-sm text-gray-600">{speaker.role}</p>
+            </div>
+          ))}
+        </div>
+      </Container>
+    </section>
   );
 }
 

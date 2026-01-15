@@ -20,17 +20,17 @@ function Register() {
   };
 
   return (
-    <section id="register" className="">
+    <section id="register" className="bg-orange-50 py-16">
       <Container maxWidth="sm">
-        <Card className="shadow-xl rounded-xl">
-          <CardContent>
-            <h2 className="text-xl font-semibold mb-6 text-center">
+        <Card className="shadow-2xl rounded-2xl border-t-4 border-orange-500 overflow-hidden">
+          <CardContent className="p-8">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center text-orange-800">
               Register for the Event
             </h2>
 
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="gap-4 flex flex-col"
+              className="flex flex-col gap-4"
             >
               <Controller
                 name="fullName"
@@ -117,7 +117,7 @@ function Register() {
                 variant="contained"
                 size="large"
                 fullWidth
-                className="bg-blue-600 hover:bg-blue-700"
+                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition"
               >
                 Register Now
               </Button>

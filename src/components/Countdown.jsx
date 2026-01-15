@@ -40,20 +40,20 @@ function Countdown({ targetDate }) {
       <section id="countdown" className="py-10 ">
         <div className=" mx-auto text-center">
           <div className="flex justify-center gap-6">
-            <h3 className="text-2xl font-semibold text-gray-900">
+            <h3 className="text-2xl font-semibold text-orange-900">
               Event Starts In
             </h3>
 
-            <span className="block text-3xl font-bold text-teal-600">
+            <span className="block text-3xl font-bold text-orange-600">
               <TimeBox label="Days" value={timeLeft.days} />
             </span>
-            <span className="block text-3xl font-bold text-teal-600">
+            <span className="block text-3xl font-bold text-orange-600">
               <TimeBox label="Hours" value={timeLeft.hours} />
             </span>
-            <span className="block text-3xl font-bold text-teal-600">
+            <span className="block text-3xl font-bold text-orange-600">
               <TimeBox label="Minutes" value={timeLeft.minutes} />
             </span>
-            <span className="block text-3xl font-bold text-teal-600">
+            <span className="block text-3xl font-bold text-orange-600">
               <TimeBox label="Seconds" value={timeLeft.seconds} />
             </span>
           </div>
