@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <div className="pt-24 md:pt-28">
+      <div className="scroll-smooth">
         <HeroSection />
         <Agenda />
         <Speakers />

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "evt-001",
+    "title": "Future of Artificial Intelligence",
+    "subtitle": "AI, ML & Automation",
+    "description": "Explore how AI is transforming industries, from healthcare to finance, with insights from global experts.",
+    "date": "2026-03-15",
+    "time": "10:00 AM - 1:00 PM IST",
+    "mode": "Online Webinar",
+    "location": "Live on Zoom",
+    "image": "/images/ai-summit.png",
+    "speaker": {
+      "name": "Dr. Ananya Rao",
+      "designation": "AI Research Scientist",
+      "company": "Google DeepMind",
+      "avatar": "/images/R4.jpg"
+    },
+    "price": "Free",
+    "tags": ["AI", "Machine Learning", "Future Tech"],
+    "seats": 500,
+    "registered": 342
+  },
+  {
+    "id": "evt-002",
+    "title": "Building Scalable Web Applications",
+    "subtitle": "Modern Web Development",
+    "description": "Learn how to build fast, scalable, and maintainable web apps using React, Node.js, and cloud-native tools.",
+    "date": "2026-04-02",
+    "time": "11:00 AM - 2:00 PM IST",
+    "mode": "Offline Conference",
+    "location": "Bengaluru, India",
+    "image": "/images/web-dev.jpeg",
+    "speaker": {
+      "name": "Rahul Mehta",
+      "designation": "Senior Frontend Engineer",
+      "company": "Meta",
+      "avatar": "/images/R5.jpg"
+    },
+    "price": "₹999",
+    "tags": ["React", "Node.js", "Scalability"],
+    "seats": 300,
+    "registered": 198
+  },
+  {
+    "id": "evt-003",
+    "title": "Cybersecurity in the Digital Age",
+    "subtitle": "Security & Privacy",
+    "description": "Understand modern cybersecurity threats, ethical hacking, and best practices to protect digital assets.",
+    "date": "2026-04-20",
+    "time": "6:00 PM - 8:30 PM IST",
+    "mode": "Online Webinar",
+    "location": "Live on Microsoft Teams",
+    "image": "/images/cyber-security.jpg",
+    "speaker": {
+      "name": "Neha Sharma",
+      "designation": "Cybersecurity Consultant",
+      "company": "IBM Security",
+      "avatar": "/images/R6.jpg"
+    },
+    "price": "₹499",
+    "tags": ["Cybersecurity", "Ethical Hacking", "Privacy"],
+    "seats": 400,
+    "registered": 275
+  },
+  {
+    "id": "evt-004",
+    "title": "Startup Growth & Fundraising Masterclass",
+    "subtitle": "Entrepreneurship",
+    "description": "A practical session on scaling startups, pitching to investors, and navigating fundraising stages.",
+    "date": "2026-05-10",
+    "time": "3:00 PM - 6:00 PM IST",
+    "mode": "Offline Workshop",
+    "location": "Mumbai, India",
+    "image": "/images/startup-growth.png",
+    "speaker": {
+      "name": "Vikram Singh",
+      "designation": "Venture Capitalist",
+      "company": "Sequoia Capital",
+      "avatar": "/images/R7.jpeg"
+    },
+    "price": "₹1499",
+    "tags": ["Startups", "Fundraising", "Business"],
+    "seats": 150,
+    "registered": 120
+  }
+]

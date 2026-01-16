@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import faqs from "../faqData.json";
+import faqs from "../../data/faqData.json";
 
 export default function FAQ() {
   return (

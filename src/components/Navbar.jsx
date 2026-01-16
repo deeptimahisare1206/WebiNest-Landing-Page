@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import logo from "../assets/logo.png";
+import { useState } from "react";
+import logo from "../../public/images/logo.png";
 import { Menu, MenuItem, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -28,12 +28,12 @@ function Navbar() {
             <img src={logo} alt="Logo" className="h-20 w-auto" />
           </div>
 
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-20">
             {menuItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-black text-lg font-medium hover:text-blue-600 transition"
+                className="text-gray-800 text-decoration-none text-lg hover:text-blue-600 transition"
               >
                 {item.name}
               </a>

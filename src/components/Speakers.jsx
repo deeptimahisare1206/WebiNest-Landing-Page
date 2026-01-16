@@ -1,8 +1,9 @@
 import React from "react";
-import s1 from "../assets/R4.jpg";
-import s2 from "../assets/R5.jpg";
-import s3 from "../assets/R6.jpg";
+import s1 from "../../public/images/R4.jpg";
+import s2 from "../../public/images/R5.jpg";
+import s3 from "../../public/images/R6.jpg";
 import { Container } from "@mui/material";
+import speaker from "../../data/data.json";
 
 function Speakers() {
   const speakers = [
@@ -21,19 +22,25 @@ function Speakers() {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {speakers.map((speaker, index) => (
+          {speaker.map((speaker, index) => (
             <div
               key={index}
               className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center hover:scale-105 transform transition duration-300"
             >
               <img
-                src={speaker.image}
-                alt={speaker.name}
+                src={speaker.speaker.avatar}
+                alt={speaker.speaker.name}
                 className="w-24 h-24 rounded-full mb-4 object-cover"
               />
-              <h3 className="text-lg font-semibold text-gray-800">
-                {speaker.name}
+              <h3 className="text-xl font-semibold text-gray-800">
+                {speaker.speaker.name}
               </h3>
+              <h6 className="text-lg font-semibold text-gray-800">
+                {speaker.speaker.designation}
+              </h6>
+              <h6 className="text-sm font-semibold text-gray-800">
+                {speaker.speaker.company}
+              </h6>
               <p className="text-sm text-gray-600">{speaker.role}</p>
             </div>
           ))}
